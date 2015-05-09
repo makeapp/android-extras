@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView 
+        android:id="@+id/txtLoadNullTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:text="@string/dk_chess_rank_null"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <com.duoku.platform.single.view.PullRefreshListView
+	    android:id="@+id/rankListViewNonchess"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:divider="@null"
+	    android:dividerHeight="6dp"
+	    android:listSelector="@null"
+	    android:drawSelectorOnTop="false"
+	    android:fadingEdge="none"
+	    android:cacheColorHint="#00000000"/>
+</LinearLayout>
+
+
+    

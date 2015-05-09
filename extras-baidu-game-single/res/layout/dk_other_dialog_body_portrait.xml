@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPaymentOtherBankCard"
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_background_selector"
+            android:drawableTop="@drawable/img_yinhang"
+            android:gravity="center"
+            android:onClick="doAliPaymentAction"
+            android:text="@string/dk_payment_channel_bankcard"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPaymentOtherAliPay"
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_background_selector"
+            android:drawableTop="@drawable/img_zhifubao"
+            android:gravity="center"
+            android:onClick="doAliPaymentAction"
+            android:text="@string/dk_payment_channel_alipay"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPaymentYeepay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPaymentOtherYeePay"
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_background_selector"
+            android:drawableTop="@drawable/img_chongzhika"
+            android:gravity="center"
+            android:onClick="doActionToRechargeCardModule"
+            android:text="@string/dk_payment_channel_chongzhika"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPaymentOtherTenPay"
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_background_selector"
+            android:drawableTop="@drawable/img_caifutong"
+            android:gravity="center"
+            android:onClick="doOtherPaymentAction"
+            android:text="@string/dk_payment_channel_hfb"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

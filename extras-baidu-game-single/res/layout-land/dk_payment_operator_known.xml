@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dk_pay_bg_dialog"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dk_dialog_header" />
+
+    <RelativeLayout
+        android:id="@+id/hintContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:clipChildren="true"
+        >
+
+        <include layout="@layout/dk_divide" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#0066cc"
+            android:textSize="16sp" />
+        <ViewStub
+            android:id="@+id/dkPaySMSTip"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout="@layout/dk_payment_sms_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ViewStub
+            android:id="@+id/dkPayMdoTip"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout="@layout/dk_payment_mdo_sms_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <include
+        android:id="@+id/layoutSMS"
+        layout="@layout/dk_operator_unknown_dialog_body_landscape" />
+
+    <include
+        android:id="@+id/layoutOther"
+        layout="@layout/dk_other_dialog_body_landscape"
+        android:visibility="gone" />
+
+    <include layout="@layout/dk_dialog_footer" />
+
+</LinearLayout>

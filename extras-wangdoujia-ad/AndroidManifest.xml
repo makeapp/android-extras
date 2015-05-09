@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0" package="com.wangdoujia">
+    <uses-sdk android:minSdkVersion="8"/>
+
+
+    <application>
+        <activity android:name="com.wandoujia.ads.sdk.AppWallActivity" android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity android:name="com.wandoujia.ads.sdk.AppWidgetContainerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:launchMode="singleTop" android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <service android:name="com.wandoujia.ads.sdk.DownloadService"/>
+    </application>
+
+    
+</manifest>

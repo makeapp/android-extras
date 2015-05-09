@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+
+    <LinearLayout android:id="@+id/dk_base_info_container_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        
+        <LinearLayout android:id="@+id/dk_base_info_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/dk_henggang_left"/>
+            
+            <TextView android:id="@+id/dk_nick_name_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:paddingTop="2dp"
+                android:maxWidth="180dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dk_color_b61b1a"
+                android:textSize="18sp" 
+                android:layout_marginLeft="8dp"/>
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/dk_henggang_right" 
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        
+        <ImageView android:id="@+id/dk_modify_nick_name_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_modify_nickname_selector"
+            android:layout_toRightOf="@id/dk_base_info_normal"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    
+    <RelativeLayout android:id="@+id/dk_moify_pwd_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/dk_btn_big_selector"
+        >
+        
+        <ImageView android:id="@+id/dk_modify_pwd_icon_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_modify_pwd_icon"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_text_mofify_pwd_list"
+            android:layout_toRightOf="@id/dk_modify_pwd_icon_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_entry"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/dk_bind_or_modify_bind_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dk_btn_big_selector"
+        >
+        
+        <ImageView android:id="@+id/dk_bind_or_modify_bind_icon_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_bind_icon"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:id="@+id/dk_img_bind_or_modify_bind_list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_text_modify_bind_list"
+            android:layout_toRightOf="@id/dk_bind_or_modify_bind_icon_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        
+        <TextView android:id="@+id/dk_bind_phone_yet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dk_img_bind_or_modify_bind_list_id"
+            android:layout_marginLeft="12sp"
+            android:textSize="14sp"
+            android:textColor="@color/dk_color_333333"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_entry"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/dk_switch_account_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dk_btn_big_selector"
+        >
+        
+        <ImageView android:id="@+id/dk_switch_account_icon_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_switch_account_icon"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_switch_account_list"
+            android:layout_toRightOf="@id/dk_switch_account_icon_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_entry"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

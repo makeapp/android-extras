@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tiger.zgjm"
+          android:versionCode="8"
+          android:versionName="build_V2014060403">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.huawei.hwid.permission.ACCESS"/>
+    <!-- 上行短信登录注册 需要发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application>
+        <!-- 业务必须集成以下配置 -->
+        <!-- 浮标SDK的配置start -->
+        <activity
+                android:name="com.huawei.gamebox.buoy.sdk.activity.WebPageActivity"
+                android:configChanges="orientation|screenSize"/>
+        <!-- 浮标SDK的配置end -->
+        <!-- 帐号SDK的配置start -->
+        <activity
+                android:name="com.huawei.hwid.openapi.auth.dump.OpenDumpActivity"
+                android:configChanges="orientation|screenSize"
+                android:exported="false"
+                android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <activity
+                android:name="com.huawei.hwid.openapi.quicklogin.ui.QuickLoginActivity"
+                android:configChanges="orientation|screenSize"
+                android:exported="false"
+                android:theme="@style/Theme.quicklogin">
+            <intent-filter>
+                <action android:name="com.huawei.hwid.opensdk.ACTION_QUICKLOGIN_SMS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 帐号SDK的配置end -->
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/txtLoadingTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center"
+        android:background="@drawable/bump_dialog_card_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/dk_loading_text"/>
+    <View 
+        android:id="@+id/loadingView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/dk_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/txtLoadingTip"/>
+</RelativeLayout>

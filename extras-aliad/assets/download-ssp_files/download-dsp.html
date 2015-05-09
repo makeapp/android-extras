@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0049)http://10.62.50.104:8080/public/download-dsp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://10.125.204.27:3000/build/mraid.js "></script>
+<style type="text/css" adt="123"></style></head>
+<body>
+    <script>
+        var download = function() {
+            var json = {}
+            json.url = "http://cdn0.puata.info/aduploads/2014/03/07/98739cd5-1796-4474-bef3-66827b4deb52.apk"
+            var report = {}
+            report.start = "http://www.baidu.com/start";
+            report.success = "http://www.baidu.com/success";
+            report.failed = "http://www.baidu.com/failed";
+            report.pause = "http://www.baidu.com/pause";
+            report.cancel = "http://www.baidu.com/cancel";
+            json.report = report
+            alert(JSON.stringify(json));
+            mraid.download(json);
+        }
+        mraid.show();
+    </script>
+    <input style="width:300px; height:300px;" type="button"  onclick="download()" value="click me">
+
+</body></html>

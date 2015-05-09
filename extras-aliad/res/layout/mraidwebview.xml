@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:id="@+id/llroot" >
+    
+    <!-- Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="refresh"
+        android:id="@+id/btrefresh"/ -->
+
+    <com.taobao.munion.view.webview.windvane.mraid.MraidWebView
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:id="@+id/webview">
+    </com.taobao.munion.view.webview.windvane.mraid.MraidWebView>
+        
+</LinearLayout>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0" package="com.baifubao.android.res">
+    <uses-sdk android:minSdkVersion="8"/>
+
+
+    <application>
+        <activity
+                android:name="com.baifubao.mpay.ifmgr.PayManagerActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+                android:launchMode="singleTop"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+                />
+
+        <!-- 银联 -->
+        <activity
+                android:name="com.unionpay.uppay.PayActivityEx"
+                android:screenOrientation="portrait" />
+        <!-- 百度钱包 -->
+        <activity
+                android:name="com.baidu.android.pay.ui.WebViewActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.SupportedCreditsActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.BindCreditAcitvity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.BindDebitFirstActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.BindDebitSecondAcitvity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.BondCardPayActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.PayResultActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activity_Base"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.game.SurplusPayActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.LoginActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:launchMode="singleTask"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.SampleLoginActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.KuaituiRegisterActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.DynamicLoginActivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.SocialLoginAcitivity"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100312028" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.baidu.android.pay.ui.FillSecurePWD"
+                android:configChanges="keyboardHidden|navigation|orientation"
+                android:excludeFromRecents="true"
+                android:theme="@style/ebpay_Theme_Activit"
+                android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+                android:name="com.baidu.sapi2.utils.LoginProtectAcitivity"
+                android:screenOrientation="portrait"
+                android:windowContentOverlay="@null"
+                android:windowSoftInputMode="adjustPan">
+        </activity>
+        <!-- end of SAPI update Activity -->
+        <meta-data
+                android:name="DUOKUSDK_CHANNEL"
+                android:value="700" />
+        <meta-data
+                android:name="BaiduMobAd_CHANNEL"
+                android:value="baidu" />
+
+        <meta-data
+                android:name="BaiduMobAd_EXCEPTION_LOG"
+                android:value="true" />
+        <meta-data
+                android:name="BaiduMobAd_SEND_STRATEGY"
+                android:value="APP_START" />
+        <meta-data
+                android:name="BaiduMobAd_TIME_INTERVAL"
+                android:value="2" />
+        <meta-data
+                android:name="BaiduMobAd_ONLY_WIFI"
+                android:value="false" />
+        <meta-data
+                android:name="BaiduMobAd_CELL_LOCATION"
+                android:value="true" />
+    </application>
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- sms pay -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <!-- Add permission for get YiPhone account info -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <!-- END:Add permission for get YiPhone account info -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+</manifest>

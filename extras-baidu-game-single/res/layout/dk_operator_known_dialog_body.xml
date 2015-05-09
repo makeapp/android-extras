@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="12dp" >
+
+    <Button
+        android:id="@+id/btnDirectChannel"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_background_selector"
+        android:drawableTop="@drawable/img_yidong"
+        android:gravity="center"
+        android:onClick="doSMSPaymentAction"
+        android:text="@string/dk_payment_channel_cmobile"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnOtherPayment"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:layout_alignTop="@id/btnDirectChannel"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/btnDirectChannel"
+        android:background="@drawable/btn_background_selector"
+        android:gravity="center"
+        android:text="@string/dk_payment_channel_other"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+</RelativeLayout>

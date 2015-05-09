@@ -1,0 +1,5 @@
+<resources>
+    <!-- D2 -->
+   	<dimen name="icon_width">62dp</dimen>
+   	<dimen name="big_height">65dp</dimen>
+</resources>

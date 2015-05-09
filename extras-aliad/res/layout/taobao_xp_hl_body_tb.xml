@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <com.taobao.newxp.view.handler.umwall.tab.TabPageIndicator
+        android:id="@+id/umeng_xp_ew_pageIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/taobao_xp_hl_indicator_tb_bg"
+        android:visibility="visible" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/umeng_xp_ew_pager"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

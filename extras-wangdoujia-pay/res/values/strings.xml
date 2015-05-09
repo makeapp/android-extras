@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wdpaydemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title">豌豆荚支付SDK-Demo2\n</string>
+    <string name="button_createId">生成订单</string>
+    <string name="button_pay">支付</string>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/dk_parent_panel" 
+    android:layout_width="306dp" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+    
+	<FrameLayout 
+	    android:id="@+id/dk_topPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="30dp" 
+	    android:background="@drawable/dk_dialog_top">
+	    		    
+	    <!-- title -->
+		<!-- <TextView 
+			android:id="@+id/dk_dialog_title"
+			android:singleLine="true" 
+		    android:textSize="16sp"
+		    android:textColor="@color/dk_color_ffffff"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"
+		    android:gravity="center"/>  -->
+  		
+		<!-- 关闭按钮 -->
+		<!-- <ImageView android:id="@+id/dk_dialog_close"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right|center_vertical"
+		    android:layout_marginRight="6dp"
+		    android:src="@drawable/dk_close_click_icon"/> -->
+  		<!-- <ImageView
+  		    android:layout_width="fill_parent" 
+  		    android:layout_height="1px" 
+  		    android:background="#c0c1c2"/>  -->
+	
+	</FrameLayout>
+    
+ 		
+	<ScrollView android:id="@+id/dk_scrollView" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@drawable/dk_dialog_center">
+			
+		<LinearLayout android:id="@+id/dk_dialog_content" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		    <!-- 在代码中动态添加布局元素 -->
+		</LinearLayout>
+	</ScrollView>
+	
+	<!-- <RelativeLayout
+	    android:id="@+id/update_progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone">
+		
+        <TextView
+            android:id="@+id/webview_loading_text" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0%"
+            android:textColor="#333333"
+            />
+        
+        <com.duoku.gamesearch.view.RotateProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@anim/webview_loading_progressbar_anim" >
+        </com.duoku.gamesearch.view.RotateProgressBar>
+
+    </RelativeLayout> -->
+	<LinearLayout android:id="@+id/dk_buttonPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="64dp"
+	    android:orientation="vertical"
+	    android:background="@drawable/dk_dialog_bottom">
+		
+		<!-- 分割线 -->
+ 		<!-- <ImageView
+  		    android:layout_width="fill_parent" 
+  		    android:layout_height="1px"
+  		    android:layout_marginTop="4dip" 
+  		    android:background="#c0c1c2"/> -->
+ 		 
+ 		<FrameLayout android:layout_width="fill_parent"
+ 		    android:layout_height="wrap_content">
+			<LinearLayout
+			    android:id="@+id/dk_two_button"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:orientation="horizontal"
+			    android:visibility="visible"
+			    >
+	  			<View android:layout_width="8dip" 
+	  			    android:layout_height="wrap_content"
+	  			    />
+	  			<FrameLayout android:layout_width="0dp"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_weight="1">
+		  			<ImageButton android:id="@+id/dk_dialog_btn_left" 
+		  			    android:layout_width="fill_parent"
+		  			    android:layout_height="wrap_content"
+		  			    android:background="@drawable/dk_btn_red_selector"
+		  			    android:src="@drawable/dk_dialog_just_use"/>
+		  			
+		  			<ImageButton android:layout_width="fill_parent"
+		  			    android:layout_height="wrap_content"
+		  			    android:background="@drawable/dk_btn_dialog_light"
+		  			    />
+	  			</FrameLayout>
+	  			<View android:layout_width="8dip" 
+	  			    android:layout_height="wrap_content"
+	  			    />
+				<View android:layout_width="8dip" 
+				    android:layout_height="wrap_content"/>
+				
+				<FrameLayout android:layout_width="0dp"
+	  			    android:layout_height="wrap_content"
+	  			    android:layout_weight="1">
+					<ImageButton
+					    android:id="@+id/dk_dialog_btn_right"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/dk_btn_gray_selector"
+					    android:src="@drawable/dk_dialog_just_use" />
+					
+					<ImageButton android:layout_width="fill_parent"
+		  			    android:layout_height="wrap_content"
+		  			    android:background="@drawable/dk_btn_dialog_light"
+		  			    />
+				</FrameLayout>	
+		</LinearLayout>
+		<LinearLayout
+	    	android:id="@+id/dk_one_button" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:orientation="vertical"
+		    android:visibility="gone"
+		    android:gravity="center">
+		    <FrameLayout android:layout_width="134dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        >
+			    <ImageButton
+			        android:id="@+id/dk_dialog_one_btn" 
+			        android:layout_width="134dp"
+	  			    android:layout_height="wrap_content"
+	  			    android:background="@drawable/dk_btn_red_selector"
+	  			    android:src="@drawable/dk_dialog_just_use"
+	  			    />
+			    <ImageButton android:id="@+id/dk_btn_dialog_light_one" 
+			        android:layout_width="fill_parent"
+	  			    android:layout_height="wrap_content"
+	  			    android:background="@drawable/dk_btn_dialog_light"
+	  			    />
+			    
+		    </FrameLayout>
+		</LinearLayout>
+		
+		
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+		    <ProgressBar  
+	   			android:id="@+id/dk_btn_progress" 
+	   			android:layout_width="36dp"  
+	   			android:layout_height="36dp"  
+	   			android:visibility="gone"
+	   			android:layout_gravity="center"
+	   			android:layout_marginTop="2dp"
+	  			/>
+		</LinearLayout>	    
+	</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

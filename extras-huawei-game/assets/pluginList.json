@@ -1,0 +1,45 @@
+{
+    "plugins": [
+        {
+        "packageName":"HiAnalytics",
+					"versionName":"HiAnalytics 23",
+					"versionCode":23,
+					"componentID": 100002,
+					"MD5":"",
+					"downloadURL":"",
+					"flag":0,
+					"filePath":"/HiAnalytics_microkernel/current/HiAnalytics.plugin"
+        },
+        {
+            "packageName": "BuoyOpenSDK",
+            "versionName": "1.1.2",
+            "versionCode": 2,
+            "componentID": 100010,
+            "MD5": "",
+            "downloadURL": "",
+            "flag": 0,
+            "filePath": "/BuoyOpenSDK_microkernel/current/BuoyOpenSDK.plugin"
+        },
+        {
+            "packageName": "hwIDOpenSDK",
+            "versionName": "hwIDOpenSDK 1.0.10",
+            "versionCode": 1010,
+            "componentID": 100003,
+            "md5": "",
+            "downloadURL": "",
+            "flag": 0,
+            "filePath": "/hwIDOpenSDK_microkernel/current/hwIDOpenSDK.plugin"
+        },
+        {					
+        			"packageName":"HuaweiPaySDK",
+					"versionName":"HuaweiPaySDK 2",
+					"versionCode":2,
+					"componentID": 100001,
+					"MD5":"",
+					"downloadURL":"",
+					"flag":0,     
+					"filePath":"/HuaweiPaySDK_microkernel/current/HuaweiPaySDK.plugin"
+		}
+],
+    "SDKVersionCode": "3"
+}

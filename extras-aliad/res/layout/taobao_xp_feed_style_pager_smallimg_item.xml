@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/taobao_xp_feed_pager_smallimg_item_height"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <com.taobao.newxp.view.widget.CYCImageView
+        android:id="@+id/taobao_xp_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/taobao_xp_cm_thumb_loading" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/taobao_xp_image"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/taobao_xp_tip_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="发现最新热卖单品"
+            android:textColor="#CACED0"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/taobao_xp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taobao_xp_tip_new"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="#818181"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taobao_xp_root_price"
+            android:layout_below="@id/taobao_xp_title"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/taobao_xp_promoterPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#FA5E2B"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/taobao_xp_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/taobao_xp_promoterPrice"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/taobao_xp_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taobao_xp_promoterPrice"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:lines="1"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

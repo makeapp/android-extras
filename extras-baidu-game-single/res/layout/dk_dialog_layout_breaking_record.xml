@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_star"
+            />
+        
+        <TextView android:id="@+id/dk_cur_score_in_breaking_dialog" 
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/dk_score_bg"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_star"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_new_rank"
+            />
+        
+        <TextView android:id="@+id/dk_cur_rank_in_breaking_dialog" 
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/dk_rank_bg"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_cup"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/dk_rank_progress_linearlayout" 
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dk_bg_dialog"
+        android:layout_gravity="center_horizontal">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_air"
+            />
+        
+        <TextView android:id="@+id/dk_rank_progress_in_breaking_dialog" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dk_color_333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="排名提升了100位"/>
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_air"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+	           	
+</LinearLayout>

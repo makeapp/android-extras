@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.woopensmspaymenttest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application >
+        <activity
+            android:name="com.unicom.woopensmspayment.UnicomWoOpenPaymentMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.unicom.woopensmspayment.UnicomSMSSuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unicom.woopensmspayment.UnicomSMSFaildActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unicom.woopensmspayment.RecordsConsumptionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="CHINA_UNICOM_MOBILE_CHANNEL"
+            android:value="23" />
+            
+            
+             <activity
+            android:name="com.unicom.woopenoneway.UnicomWoOpenPaymentMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.unicom.woopenoneway.UnicomSMSSuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unicom.woopenoneway.UnicomSMSFaildActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unicom.woopenoneway.RecordsConsumptionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.unicom.woopenoneway.WebPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="com.unicom.unicomgamesdk.UnicomWoOpenPaymentMainActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:windowSoftInputMode="stateAlwaysHidden|adjustPan" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.unicom.unicomgamesdk.UnicomSMSSuccessActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:launchMode="singleTop" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.unicom.unicomgamesdk.UnicomSMSFaildActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:launchMode="singleTop" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.unicom.unicomgamesdk.UnicomSMSTimeOutActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:launchMode="singleTop" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.unicom.unicomgamesdk.RecordsConsumptionActivity" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:screenOrientation="landscape" /> -->
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+</manifest>

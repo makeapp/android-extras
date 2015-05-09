@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/actionbar_background_start" >
+
+            <ImageView
+                android:id="@+id/actionbar_home_logo"
+                style="@style/ActionBarHomeLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_margin="8dp"
+                android:background="@drawable/actionbar_btn"
+                android:padding="0dip"
+                android:src="@drawable/actionbar_home_btn" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title" >
+
+            <RelativeLayout
+                android:id="@+id/father1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" >
+
+                <ListView
+                    android:id="@+id/list_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#dedfde"
+                    android:dividerHeight="1px"
+                    android:listSelector="#00000000" >
+                </ListView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/father2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" >
+
+                <ListView
+                    android:id="@+id/list_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#dedfde"
+                    android:dividerHeight="1px"
+                    android:listSelector="#00000000" >
+                </ListView>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost>

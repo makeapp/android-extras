@@ -1,0 +1,5 @@
+<resources>
+    <!-- X1 -->
+   	<dimen name="icon_width">131dp</dimen>
+   	<dimen name="big_height">85dp</dimen>
+</resources>

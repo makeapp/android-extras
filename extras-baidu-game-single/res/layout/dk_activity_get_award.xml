@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/dk_parent_panel" 
+    android:layout_width="306dp" 
+    android:layout_height="fill_parent" >
+    
+	<FrameLayout 
+	    android:id="@+id/dk_topPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/dk_dialog_top">
+	    <!-- title -->
+		<TextView 
+			android:id="@+id/dk_txt_title"
+			android:singleLine="true" 
+		    android:textSize="16sp"
+		    android:textColor="@color/dk_color_c9c2bf"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:gravity="center"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip"
+		    android:layout_gravity="center"/> 
+		<!-- 关闭按钮 -->
+		<Button android:id="@+id/dk_btn_close"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right|center_vertical"
+		    android:layout_marginRight="6dp"
+		    android:background="@drawable/dk_btn_close_selector"/>
+	</FrameLayout>
+	<ScrollView 
+	    android:id="@+id/dk_scrollView" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="140dp"
+	    android:layout_below="@id/dk_topPanel"
+	    android:background="@drawable/dk_dialog_center">
+		<LinearLayout 
+		    android:id="@+id/dk_dialog_content" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    <include 
+		        layout="@layout/dk_dialog_layout_award" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout 
+	    android:id="@+id/dk_buttonPanel" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="64dp"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:layout_below="@id/dk_scrollView"
+	    android:background="@drawable/dk_dialog_bottom">
+	    <FrameLayout 
+	        android:id="@+id/dk_dialog_frame_one"
+	        android:layout_width="134dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center">
+		    <ImageButton
+		        android:id="@+id/dk_dialog_one_btn" 
+		        android:layout_width="134dp"
+  			    android:layout_height="wrap_content"
+  			    android:background="@drawable/dk_btn_red_selector"
+  			    android:src="@drawable/dk_confirm"/>
+		    <ImageButton 
+		        android:layout_width="fill_parent"
+  			    android:layout_height="wrap_content"
+  			    android:clickable="false"
+		  		android:focusable="false"
+		  		android:focusableInTouchMode="false"
+  			    android:background="@drawable/dk_btn_dialog_light"/>
+	    </FrameLayout>
+	</LinearLayout>
+	<include 
+	    layout="@layout/dk_loading"
+	    android:layout_centerInParent="true"/>
+</RelativeLayout>

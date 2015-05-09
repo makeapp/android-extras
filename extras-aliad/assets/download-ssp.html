@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0049)http://10.62.50.104:8080/public/download-ssp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./download-ssp_files/ssp.js"></script><style type="text/css" adt="123"></style>
+    <script src="http://10.125.204.27:3000/build/mraid.js"></script>
+<body> 
+    <script>
+   	    ssp.addEventListener("creativeReady", hahaha);
+   	    var downloadListener = function(json) {
+            alert("DownloadListeners:"+json.command+"  "+json.status);
+            if(json.command == 'download' && json.status == 'start') {
+            	json.report.start.push("ssp://start")
+            	ssp.downloadFeedback(json);
+            }
+        }
+        mraid.addEventListener("actionChange", downloadListener);
+
+        var hahaha = function() {
+        	alert("haha")
+        	ssp.creativeShow();
+        }
+    </script> 
+    <iframe src="./download-ssp_files/download-dsp.html" tanx_mraid_iframe_id="0-0"></iframe>
+
+</body></html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+       
+        <com.duoku.platform.single.view.DKPhoneEditText android:id="@+id/dk_phone_edit_account_manager_modify_bind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/dk_account_manager_phone_hint"
+            android:gravity="center_vertical"
+            android:background="@drawable/dk_edittext_selector"
+            android:textColorHint="@color/dk_color_999999"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/dk_color_333333"
+            android:imeOptions="actionDone"/>
+       
+		<Button android:id="@+id/dk_get_verfify_code_text_modify_bind"
+		    android:layout_width="88dp"
+		    android:layout_height="44sp"
+		    android:text="@string/dk_btn_string_get_verify_code"
+		    android:textSize="12sp"
+		    android:singleLine="true"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:textColor="@color/dk_color_666666"
+		    android:background="@drawable/dk_get_verify_btn_selector"
+		    />
+		
+   	</LinearLayout>
+   	
+    <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="14dp"
+          android:orientation="horizontal">
+         
+        <EditText android:id="@+id/dk_verify_bind_phone_edit_account_manager_modify_bind"
+            android:hint="@string/dk_et_string_verifycode_hint"
+            style="@style/dk_style_user_edittext"
+            />
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:id="@+id/dk_bind_phone_now_modify_bind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:background="@drawable/dk_bind_phone_btn_selector">
+		
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dk_bind_now"/>
+   	</LinearLayout>
+	           	
+</LinearLayout>

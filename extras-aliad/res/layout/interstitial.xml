@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/interstitialLoad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Load" />
+
+    <Button
+        android:id="@+id/interstitialClose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interstitialLoad"
+        android:text="Close" />
+
+    <com.taobao.munion.view.interstitial.MunionInterstitialView
+        android:id="@+id/interstitialView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

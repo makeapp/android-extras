@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <dimen name="taobao_xp_feed_pager_height">65dp</dimen>
+    <dimen name="taobao_xp_feed_simple_height">135dp</dimen>
+    <dimen name="taobao_xp_feed_pager_smallimg_app_height">65dp</dimen>
+    <dimen name="taobao_xp_feed_pager_smallimg_item_height">130dp</dimen>
+    <dimen name="taobao_xp_feed_simple_text_height">35dp</dimen>
+</resources>

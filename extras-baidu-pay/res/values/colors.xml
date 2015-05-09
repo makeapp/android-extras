@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   	<color name="aipay_gray">#f2f2f2</color>    
+   	<color name="aipay_white">#ffffff</color>  
+   	<color name="aipay_transparent">#00000000</color>  
+    <color name="aipay_order_bg">#F3F7FF</color>
+    <color name="aipay_6c">#cccccc</color>
+    <color name="aipay_e4e4e4">#e4e4e4</color>
+    
+    <color name="aipay_text_orange">#ea8b46</color>
+    <color name="aipay_text_black">#333333</color>
+    <color name="aipay_text_gray">#999999</color>
+    <color name="aipay_text_6992d7">#6992d7</color>
+    <color name="aipay_text_555555">#555555</color>
+    <color name="aipay_text_aaaaaa">#aaaaaa</color>
+    <color name="aipay_half_transparent">#80000000</color>  
+</resources>

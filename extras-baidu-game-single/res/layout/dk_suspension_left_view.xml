@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duoku.platform.single.suspend.DKSuspensionView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="234dp"
+    android:layout_height="81dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    
+    <!-- <ImageView android:id="@+id/dk_suspend_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dk_suspend_icon_normal"
+        android:layout_gravity="center_vertical"/> -->
+    
+    <HorizontalScrollView 
+        android:id="@+id/dk_hsview"
+        android:layout_width="234dp"
+        android:layout_height="81dp"
+        android:background="@drawable/dk_suspend_bg"
+        android:scrollbars="none">
+        <LinearLayout android:id="@+id/dk_game_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="2dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+</com.duoku.platform.single.suspend.DKSuspensionView>

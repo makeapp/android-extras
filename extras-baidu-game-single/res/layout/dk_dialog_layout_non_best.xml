@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_star"
+            />
+        
+        <TextView android:id="@+id/dk_cur_score" 
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/dk_score_bg"
+            android:textColor="@color/dk_color_ffffff"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dk_star"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dk_bg_dialog"
+        android:orientation="vertical"
+        android:layout_marginBottom="14dp">
+        
+        <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:gravity="center"
+	        android:orientation="horizontal">
+        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"/>
+	        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"
+	            android:layout_marginLeft="16dp"/>
+	        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"
+	            android:layout_marginLeft="16dp"/>
+	        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"
+	            android:layout_marginLeft="16dp"/>
+	        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"
+	            android:layout_marginLeft="16dp"/>
+	        
+	        <ImageView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/dk_star_left"
+	            android:layout_marginLeft="16dp"/>
+    	</LinearLayout>
+    	
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dk_color_333333"
+                android:text="@string/dk_ever_best_record"/>
+            
+            <TextView android:id="@+id/dk_best_record" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dk_color_d70306"
+                />
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="6dp">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dk_color_333333"
+                android:text="@string/dk_ever_rank"/>
+            
+            <TextView android:id="@+id/dk_best_rank" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dk_color_d70306"
+                />
+        </LinearLayout>
+    </LinearLayout>
+	           	
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@android:color/transparent">
+    <!-- 内容 -->
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <!-- 箭头图像、进度条 -->
+        <FrameLayout
+            android:id="@+id/dk_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+            <!-- 箭头 -->
+            <ImageView
+                android:id="@+id/head_arrowImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dk_rank_pulltorefresh_arrow" />
+            <!-- 进度条 -->
+            <ProgressBar
+                android:id="@+id/head_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+        <!-- 提示、最近更新 -->
+        <LinearLayout
+            android:layout_toRightOf="@id/dk_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+            <!-- 提示 -->
+            <TextView
+                android:id="@+id/head_tipsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dk_rank_pulldown_refresh"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+            <!-- 最近更新 -->
+            <TextView
+                android:id="@+id/head_lastUpdatedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:text="@string/dk_rank_last_modified"
+                android:textColor="@color/dk_gold"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

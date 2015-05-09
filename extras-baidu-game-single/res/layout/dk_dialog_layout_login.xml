@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+        
+    <EditText android:id="@+id/dk_username_edit" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dk_edittext_selector"
+        android:textColor="@color/dk_color_333333"
+        android:textColorHint="@color/dk_color_999999"
+        android:hint="@string/dk_input_username_hint"
+        android:digits="@string/dk_register_name_digits"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/dk_user_input_icon"
+        android:drawablePadding="8dp"/>
+    
+    <EditText android:id="@+id/dk_pwd_edit" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/dk_edittext_selector"
+        android:textColor="@color/dk_color_333333"
+        android:textColorHint="@color/dk_color_999999"
+        android:hint="@string/dk_input_pwd_hint"
+        android:digits="@string/dk_register_name_digits"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/dk_pwd_input_icon"
+        android:drawablePadding="8dp"
+        />
+    
+    <FrameLayout android:id="@+id/dk_loading_or_msg_hint_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+        <LinearLayout 
+	        android:id="@+id/dk_dialog_loading_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center"
+	        android:visibility="gone">
+	        <ProgressBar 
+	            android:id="@+id/dk_loading_bar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="?android:attr/progressBarStyleSmall" 
+				android:indeterminate="true"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginLeft="8dp" 
+				android:textSize="14sp"
+				android:textColor="#666666"
+				android:text="@string/dk_login_loading"/>
+       </LinearLayout>
+    	
+       <TextView android:id="@+id/dk_dialog_msg_hint_login"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:visibility="visible"
+           android:textSize="14sp"
+           android:gravity="left"
+           android:textColor="@color/dk_color_d70305"/>
+	       
+    </FrameLayout>
+</LinearLayout>

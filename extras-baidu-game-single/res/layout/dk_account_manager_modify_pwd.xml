@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dk_modify_pwd_account_manager"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+    
+   <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal">
+      
+       <EditText android:id="@+id/dk_account_manager_pre_pwd"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:hint="@string/dk_tv_string_pre_pwd"
+           android:gravity="center_vertical"
+           android:background="@drawable/dk_edittext_selector"
+           android:password="true"
+           android:textColorHint="@color/dk_color_999999"
+           android:singleLine="true"
+           android:textSize="14sp"
+           android:digits="@string/dk_register_name_digits"/>
+      
+  	</LinearLayout>
+  	
+   <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="14dp"
+       android:orientation="horizontal">
+      
+       <EditText android:id="@+id/dk_account_manager_new_pwd"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:hint="@string/dk_tv_string_new_pwd"
+           android:gravity="center_vertical"
+           android:background="@drawable/dk_edittext_selector"
+           android:password="true"
+           android:textColorHint="@color/dk_color_999999"
+           android:singleLine="true"
+           android:textSize="14sp"
+           android:digits="@string/dk_register_name_digits"/>
+      
+  	</LinearLayout>
+  	
+   <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="14dp"
+       android:orientation="horizontal">
+      
+       <EditText android:id="@+id/dk_account_manager_check_new_pwd"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:hint="@string/dk_tv_string_confire_new_pwd"
+           android:gravity="center_vertical"
+           android:background="@drawable/dk_edittext_selector"
+           android:password="true"
+           android:textColorHint="@color/dk_color_999999"
+           android:singleLine="true"
+           android:textSize="14sp"
+           android:digits="@string/dk_register_name_digits"/>
+      
+  	</LinearLayout>
+  	
+   <LinearLayout
+       android:id="@+id/dk_modify_pwd_confirm"
+       android:layout_width="fill_parent"
+       android:layout_height="52dp"
+       android:layout_marginTop="22dp"
+       android:gravity="center"
+       android:orientation="horizontal" 
+       android:background="@drawable/dk_bg_title">
+
+	   <ImageView android:layout_width="wrap_content"
+	       android:layout_height="52dp"
+	       android:src="@drawable/dk_confirm_modify_pwd"/>				
+  	</LinearLayout>
+ 
+</LinearLayout>

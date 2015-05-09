@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" 
+        android:text="@string/dk_complete_info_hint"
+        android:textSize="12sp"
+        android:textColor="@color/dk_color_d70305"
+        android:gravity="center"/>
+    
+    <!-- <EditText android:id="@+id/dk_edit_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/dk_bg_dialog"
+        android:textColor="@color/dk_color_333333"
+        android:textColorHint="@color/dk_color_999999"
+        android:text="@string/dk_complete_info_account_hint"
+        android:textSize="14sp"/> -->
+        
+       <EditText android:id="@+id/dk_edit_pwd_1" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/dk_bg_dialog"
+        android:textColor="@color/dk_color_333333"
+        android:textColorHint="@color/dk_color_999999"
+        android:hint="@string/dk_tv_string_new_pwd"
+        android:digits="@string/dk_register_name_digits"
+        android:textSize="14sp"
+        android:enabled="false"
+        android:paddingLeft="8dp"
+        android:text="@string/dk_complete_info_account_hint"/>
+    
+    <EditText android:id="@+id/dk_edit_pwd" 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/dk_edittext_selector"
+        android:textColor="@color/dk_color_333333"
+        android:textColorHint="@color/dk_color_999999"
+        android:hint="@string/dk_tv_string_new_pwd"
+        android:digits="@string/dk_register_name_digits"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        />
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="left|center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/dk_color_666666"
+        android:text="@string/dk_send_msg_hint"/>
+    
+    <FrameLayout android:id="@+id/dk_loading_or_msg_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+        <LinearLayout 
+	        android:id="@+id/dk_dialog_loading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center"
+	        android:visibility="gone">
+	        <ProgressBar 
+	            android:id="@+id/dk_loading_bar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="?android:attr/progressBarStyleSmall" 
+				android:indeterminate="true"/>
+			<TextView 
+			    android:id="@+id/dk_loading_msg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginLeft="8dp" 
+				android:textSize="14sp"
+				android:textColor="#666666"
+				android:text="@string/dk_completion_loading"/>
+       </LinearLayout>
+    	
+       <TextView android:id="@+id/dk_dialog_msg_hint"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:visibility="visible"
+           android:textSize="14sp"
+           android:gravity="left"
+           android:textColor="@color/dk_color_d70305"/>
+	       
+    </FrameLayout>
+    
+          	
+</LinearLayout>

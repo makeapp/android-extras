@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+       
+    <RelativeLayout
+        android:id="@+id/rl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+    
+    
+ <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/rl_ad"
+     >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    
+
+    
+     
+    <!--   <Button
+        android:id="@+id/btn_fullscreen_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全屏初始化" 
+         android:layout_below="@+id/btn_screen_close" />
+ -->
+    <Button
+        android:id="@+id/btn_fullscreen_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全屏广告加载" 
+         />
+
+    <Button
+        android:id="@+id/btn_fullscreen_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全屏展现" 
+        android:layout_below="@+id/btn_fullscreen_load" />
+     
+     </RelativeLayout>
+  </ScrollView>  
+    
+</RelativeLayout>

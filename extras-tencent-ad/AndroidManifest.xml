@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0" package="com.tencent">
+    <uses-sdk android:minSdkVersion="8"/>
+
+
+    <application>
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false"/>
+        <activity android:name="com.qq.e.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+    </application>
+
+
+</manifest>

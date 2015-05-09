@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dk_pay_bg_dialog"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dk_dialog_header" />
+
+    <RelativeLayout
+        android:id="@+id/hintContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp" >
+
+        <include layout="@layout/dk_divide" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#0066cc"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/dk_divide" />
+
+    <include layout="@layout/dk_other_dialog_body_portrait" />
+
+    <include layout="@layout/dk_dialog_footer" />
+
+</LinearLayout>

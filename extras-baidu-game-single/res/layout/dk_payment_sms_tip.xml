@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout 
+	    android:id="@+id/dkTipSMS"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/transparent"
+	    android:gravity="left"
+	    android:minHeight="110dp"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/dkTxtGoodsName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:layout_marginBottom="5dp"
+	        android:textColor="@android:color/black"
+	        android:text="@string/dk_payment_props_name"
+	        android:textSize="16sp"/>
+	    <TextView
+	        android:id="@+id/dkTxtGoodsPrice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:layout_marginBottom="5dp"
+	        android:text="@string/dk_payment_props_price"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp"/>
+	    <TextView
+	        android:id="@+id/dkTxtGoodsTip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:layout_marginBottom="5dp"
+	        android:text="@string/dk_payment_props_paysms"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp"/>
+	    <TextView
+	        android:id="@+id/dkTxtGoodsReminder"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dk_color_999999"
+	        android:text="@string/dk_payment_props_smstip"
+	        android:singleLine="true"
+	        android:textSize="14sp" />
+	</LinearLayout>
+</ScrollView>

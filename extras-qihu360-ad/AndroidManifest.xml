@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0" package="com.qihu360">
+    <application>
+        <activity
+                android:name="com.pubukeji.diandeows.adviews.DiandeActivity"
+                android:configChanges="orientation|keyboard|keyboardHidden"
+                />
+        <receiver android:name="com.pubukeji.diandeows.reciever.AppInstalledReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.pubukeji.diandeows.services.UploadService">
+        </service>
+
+        <service android:name="com.pubukeji.diandeows.services.DownloadService">
+        </service>
+    </application>
+
+
+</manifest>

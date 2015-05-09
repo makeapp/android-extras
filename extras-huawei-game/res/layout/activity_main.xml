@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+
+    <!-- <Button
+        android:id="@+id/startupPlugin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:onClick="getStartup"
+        android:text="初始化插件加载" >
+    </Button>
+
+    <Button
+        android:id="@+id/getStartup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startupPlugin"
+        android:onClick="getStartup"
+        android:text="初始化浮标数据" >
+    </Button> -->
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:gravity="center"
+        android:text="登录" >
+    </Button>
+
+    <Button
+        android:id="@+id/huaweipay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:gravity="center"
+        android:text="支付" >
+    </Button>
+    
+    
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/huaweipay"
+        android:gravity="center"
+        android:text="退出" >
+    </Button>
+    
+<!-- 
+
+    <Button
+        android:id="@+id/destory_float_window"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_float_window"
+        android:text="销毁窗口" >
+    </Button> -->
+
+</RelativeLayout>

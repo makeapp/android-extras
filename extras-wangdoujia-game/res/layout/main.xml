@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/sample_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="插件化整合版DEMO"/>
+
+
+    <Button
+        android:id="@+id/call_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="展示社交排行版"/>
+
+    <Button
+        android:id="@+id/call_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="展示成就系统"/>
+
+    <Button
+        android:id="@+id/call_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="测试按钮"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/orderInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"/>
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100钻石" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格(元)" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10" >
+        </EditText>
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网游付款" />
+
+        <Button
+            android:id="@+id/pay_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单机付款" />
+
+      <Button
+          android:id="@+id/game_gift"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="礼包" />
+
+      <Button
+          android:id="@+id/game_account"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="账号" />
+
+
+    </LinearLayout>
+
+
+ </LinearLayout>
+
+
+</ScrollView>
