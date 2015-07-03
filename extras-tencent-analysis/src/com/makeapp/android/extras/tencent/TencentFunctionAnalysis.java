@@ -2,6 +2,7 @@ package com.makeapp.android.extras.tencent;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import com.makeapp.android.extras.FunctionAndroid;
 import com.tencent.stat.MtaSDkException;
 import com.tencent.stat.StatConfig;
@@ -17,12 +18,7 @@ public class TencentFunctionAnalysis
     public Void apply(String s) {
         String[] params = s.split(" ");
 
-        if ("onResume".equalsIgnoreCase(params[0])) {
-            // 页面开始
-            StatService.onResume(FunctionAndroid.context);
-        } else if ("onPause".equalsIgnoreCase(params[0])) {
-            StatService.onPause(FunctionAndroid.context);
-        } else if ("onEvent".equals(params[0])) {
+        if ("onEvent".equals(params[0])) {
             if (params.length >= 3) {
                 StatService.trackCustomBeginEvent(FunctionAndroid.context, params[1], params[2]);
                 StatService.trackCustomEndEvent(FunctionAndroid.context, params[1], params[2]);
@@ -57,24 +53,44 @@ public class TencentFunctionAnalysis
             e.printStackTrace();
         }
 
-        StatService.startNewSession(FunctionAndroid.context);
+//        StatService.startNewSession(FunctionAndroid.context);
+    }
+
+
+    @Override
+    protected void onResume(Activity activity) {
+        super.onResume(activity);
+        Log.i("Mta","onResume "+ activity);
+        StatService.onResume(activity);
+    }
+
+    @Override
+    protected void onPause(Activity activity) {
+        super.onPause(activity);
+        Log.i("Mta","onPause "+ activity);
+        StatService.onPause(activity);
+    }
+
+    @Override
+    public void onStop(Activity activity) {
+        super.onStop(activity);
     }
 
     @Override
     protected void onAppDestory() {
         super.onAppDestory();
-        StatService.stopSession();
+//        StatService.stopSession();
     }
 
     @Override
     protected void onCreate(Activity activity) {
-        super.onCreate(activity);
-        StatService.trackBeginPage(activity,activity.getLocalClassName());
+        super.onCreate(activity);//15921864573
+//        StatService.trackBeginPage(activity,activity.getLocalClassName());
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
-        StatService.trackEndPage(activity,activity.getLocalClassName());
+    public void onDestroy(Activity activity) {
+        super.onDestroy(activity);
+//        StatService.trackEndPage(activity,activity.getLocalClassName());
     }
 }

@@ -20,7 +20,8 @@ public abstract class FunctionAndroid<T, V>
         implements Function<T, V> {
 
     static protected Context context;
-    protected Activity activity;
+     protected Activity activity;
+
     Bundle metaData;
 
     protected String name;
@@ -101,22 +102,22 @@ public abstract class FunctionAndroid<T, V>
     }
 
     protected void onCreate(Activity activity) {
-        this.activity = activity;
+        this.activity=activity;
     }
 
-    protected void onResume() {
-
-    }
-
-    protected void onPause() {
+    protected void onResume(Activity activity) {
 
     }
 
-    public void onStart() {
+    protected void onPause(Activity activity) {
 
     }
 
-    public void onStop() {
+    public void onStart(Activity activity) {
+
+    }
+
+    public void onStop(Activity activity) {
 
     }
 
@@ -125,11 +126,11 @@ public abstract class FunctionAndroid<T, V>
 
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
 
     }
 
-    public void onDestroy() {
+    public void onDestroy(Activity activity) {
 
     }
 
@@ -146,13 +147,13 @@ public abstract class FunctionAndroid<T, V>
         }
     }
 
-    public static void doStop() {
+    public static void doStop(final Activity activity) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onStop();
+                    androidFunction.onStop(activity);
                 }
             }
         });
@@ -242,37 +243,37 @@ public abstract class FunctionAndroid<T, V>
         }
     }
 
-    public static void doResume() {
+    public static void doResume( final Activity activity) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onResume();
+                    androidFunction.onResume(activity);
                 }
             }
         });
     }
 
-    public static void doPause() {
+    public static void doPause( final Activity activity) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onPause();
+                    androidFunction.onPause(activity);
                 }
             }
         });
     }
 
-    public static void doStart() {
+    public static void doStart( final Activity activity) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onStart();
+                    androidFunction.onStart(activity);
                 }
             }
         });
@@ -291,25 +292,25 @@ public abstract class FunctionAndroid<T, V>
         });
     }
 
-    public static void doDestroy() {
+    public static void doDestroy(final Activity activity) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onDestroy();
+                    androidFunction.onDestroy(activity);
                 }
             }
         });
     }
 
-    public static void doActivityResult(final int requestCode, final int resultCode, final Intent data) {
+    public static void doActivityResult(final Activity activity,final int requestCode, final int resultCode, final Intent data) {
         FunctionFactory.forEach(new FunctionIterator() {
             @Override
             public void next(Function function) {
                 if (function instanceof FunctionAndroid) {
                     FunctionAndroid androidFunction = (FunctionAndroid) function;
-                    androidFunction.onActivityResult(requestCode, resultCode, data);
+                    androidFunction.onActivityResult(activity, requestCode, resultCode, data);
                 }
             }
         });

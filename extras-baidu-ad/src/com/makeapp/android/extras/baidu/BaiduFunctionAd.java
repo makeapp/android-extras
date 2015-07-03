@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import com.baidu.mobads.*;
 import com.makeapp.android.extras.FunctionAd;
+import com.makeapp.android.extras.FunctionAndroid;
 import org.fun.FunctionFactory;
 
 /**

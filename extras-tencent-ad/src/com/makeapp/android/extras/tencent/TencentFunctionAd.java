@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.RelativeLayout;
 import com.makeapp.android.extras.FunctionAd;
+import com.makeapp.android.extras.FunctionAndroid;
 import com.qq.e.ads.*;
 import com.qq.e.gridappwall.GridAppWall;
 import com.qq.e.gridappwall.GridAppWallListener;
@@ -26,7 +27,6 @@ public class TencentFunctionAd
         super.onAppCreate(activity);
         appId = getConfig("app_id");
     }
-
 
     public void showSplash() {
         new SplashAd(activity, rootView, appId, getConfig("splash_id"),
